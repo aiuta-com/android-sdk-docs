@@ -13,7 +13,7 @@
 
         <spotlight>
             <a href="Getting-started-with-Fashion.md"
-               description="Get started with Fashion" type= "start"/>
+               description="Get started with Fashion" type="start"/>
             <a href="Getting-started-with-Fashion-Try-On.md"
                description="Get started with Fashion Try on" type="idea"/>
         </spotlight>
@@ -47,7 +47,8 @@
                 </group>
                 <group>
                     <title>Other Resources</title>
-                    <a href="https://aiuta-com.github.io/android-sdk-docs-api/">API Reference</a>
+                    <a href="https://aiuta-com.github.io/android-sdk-docs-api/"
+                       summary="API Reference">API Reference</a>
                 </group>
             </links>
         </misc>
