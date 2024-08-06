@@ -10,13 +10,9 @@ permissions:
   id-token: write
   pages: write
 
-env:
-  INSTANCE: Writerside/hi
-  ARTIFACT: webHelpHI2-all.zip
-  DOCKER_VERSION: 241.18775
-
 jobs:
   build:
+    name: Build docs
     runs-on: ubuntu-latest
     
     steps:
@@ -28,20 +24,21 @@ jobs:
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v4
         with:
-          instance: ${{ env.INSTANCE }}
-          artifact: ${{ env.ARTIFACT }}
-          docker-version: ${{ env.DOCKER_VERSION }}
+          instance: ${{ vars.WRITESIDE_INSTANCE }}
+          artifact: ${{ vars.WRITESIDE_ARTIFACT }}
+          docker-version: ${{ vars.WRITESIDE_DOCKER_VERSION }}
         
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: docs
           path: |
-            artifacts/${{ env.ARTIFACT }}
+            artifacts/${{ vars.WRITESIDE_ARTIFACT }}
             artifacts/report.json
           retention-days: 7
 
   test:
+    name: Test docs
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -54,9 +51,10 @@ jobs:
       - name: Test documentation
         uses: JetBrains/writerside-checker-action@v1
         with:
-          instance: ${{ env.INSTANCE }}
+          instance: ${{ vars.WRITESIDE_INSTANCE }}
 
   deploy:
+    name: Deploy docs
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -71,7 +69,7 @@ jobs:
           name: docs
 
       - name: Unzip artifact
-        run: unzip -O UTF-8 -qq ${{ env.ARTIFACT }} -d dir
+        run: unzip -O UTF-8 -qq ${{ vars.WRITESIDE_ARTIFACT }} -d dir
 
       - name: Setup Pages
         uses: actions/configure-pages@v4.0.0
