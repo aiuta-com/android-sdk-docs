@@ -59,4 +59,4 @@ You can track the current status and get the result through by collecting return
 As the result is ready, the necessary `SKUGenerationStatus.SuccessGenerationStatus` will be emitted.
 
 To learn more about all possible `SKUGenerationStatus`, see [code](https://github.com/aiuta-com/android-sdk/blob/main/fashion-tryon-core/src/main/kotlin/com/aiuta/fashionsdk/tryon/core/domain/models/SKUGenerationStatus.kt)
-or [api reference](https://aiuta-com.github.io/android-sdk-docs-api/fashion-tryon-core/com.aiuta.fashionsdk.tryon.core.domain.models/-s-k-u-generation-status/index.html)
+or [api reference](https://aiuta-com.github.io/android-sdk/fashion-tryon-core/com.aiuta.fashionsdk.tryon.core.domain.models/-s-k-u-generation-status/index.html)

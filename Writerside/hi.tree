@@ -29,7 +29,7 @@
     <toc-element topic="Releases.md"/>
     <toc-element topic="FAQ.md"/>
     <toc-element toc-title="Other Resources">
-        <toc-element toc-title="API Reference" href="https://aiuta-com.github.io/android-sdk-docs-api/"/>
+        <toc-element toc-title="API Reference" href="https://aiuta-com.github.io/android-sdk/"/>
     </toc-element>
 
 </instance-profile>
