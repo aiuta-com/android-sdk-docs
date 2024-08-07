@@ -18,7 +18,7 @@
         <social type="email" href="aiuta@aiuta.com"/>
         <social type="instagram" href="https://www.instagram.com/aiutacom"/>
         <link href="https://github.com/aiuta-com/android-sdk/pulls">Contribute to Fashion SDK</link>
-        <link href="https://aiuta-com.github.io/android-sdk-docs-api/">API Reference</link>
+        <link href="https://aiuta-com.github.io/android-sdk/">API Reference</link>
         <link href="https://aiuta.com/">Visit Aiuta</link>
     </footer>
 </buildprofiles>
