@@ -72,7 +72,7 @@ jobs:
         run: unzip -O UTF-8 -qq ${{ vars.WRITESIDE_ARTIFACT }} -d dir
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4.0.0
+        uses: actions/configure-pages@v5.0.0
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
@@ -81,4 +81,4 @@ jobs:
       
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4.0.4
+        uses: actions/deploy-pages@v4.0.5
