@@ -4,7 +4,8 @@ The following table lists details of the latest Fashion SDK releases.
 
 | Version | Release Date      | Highlights                                                                                                                                                                            |
 |---------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.1.7   | August 7, 2024    | Update turkish translation in feedback and implementation of auto deploy to Maven Central<br/> [See changelog on Github](https://github.com/aiuta-com/android-sdk/releases/tag/0.4.0) |
+| 1.1.8   | August 8, 2024    | Fixed dependencies of bom by deployment<br/> [See changelog on Github](https://github.com/aiuta-com/android-sdk/releases/tag/1.1.8)                                                   |
+| 1.1.7   | August 7, 2024    | Update turkish translation in feedback and implementation of auto deploy to Maven Central<br/> [See changelog on Github](https://github.com/aiuta-com/android-sdk/releases/tag/1.1.7) |
 | 1.1.6   | August 5, 2024    | Implementation of legal disclaimer and small internal technical improvements<br/> [See changelog on Github](https://github.com/aiuta-com/android-sdk/releases/tag/1.1.6)              |
 | 1.1.5   | July 29, 2024     | Implementation of try on disclaimer and feedback<br/> [See changelog on Github](https://github.com/aiuta-com/android-sdk/releases/tag/1.1.5)                                          |
 | 0.4.1   | June 3, 2024      | Small bug fixes and improvements of UI<br/> [See changelog on Github](https://github.com/aiuta-com/android-sdk/releases/tag/0.4.1)                                                    |
